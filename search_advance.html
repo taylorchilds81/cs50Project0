@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang=""en">
+    <head>
+        <title>Google Advanced Search</title>
+        <style>
+            .g_Image:before {
+                content: url(https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg);
+                height: 24px;
+                width: 74px;
+            }
+
+            .form_body {
+                max-width: 1140px;
+                min-width: 200px;
+                width: 96%;
+                margin: 40px 2% 0 45px;
+            }
+
+            .form_L1 {
+                width: 100%;
+                clear: both;
+            }
+            
+            .ad_search {
+                color: #d93025;
+                font-size: 20px;
+                margin: 25px 35px
+            }
+
+            .form_L2_C1 {
+                float: left;
+                display: inline-block;
+                min-width: 167px;
+                width: 20%;
+                font-size: 16px;
+                min-height: 42px;
+                font-weight: 500;
+                color: #333;
+                vertical-align: middle;
+            }
+
+            .form_L2_C2 {
+                float: left;
+                display: inline-block;
+                min-width: 167px;
+                width: 40%;
+                min-height: 42px;
+                vertical-align: middle;
+            }
+
+            .form_L2_C2_btn {
+                float: right;
+                display: inline-block;
+                min-width: 167px;
+                width: 50%;
+                min-height: 42px;
+                vertical-align: middle;
+            }
+
+            .atw_input {
+                border-radius: 1px;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+                font-size: 13px;
+                height: 25px;
+                padding: 1px 8px;
+                width: 100%;
+            }
+
+            .as_btn {
+                color: #fff;
+                box-shadow: none;
+                background-color: #4d90fe;
+                background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+                border: 1px solid #3079ed;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <header role="banner">
+                <div>
+                    <a aria-label="Go to Google Home" href="index.html" title = "Go to Google Home">
+                        <span class = g_Image ></span>
+                    </a>
+                </div>
+            </header>
+        </div>
+
+        <div class = ad_search>
+            <label style="margin-left:10px"> Advanced Search</label>
+        </div>
+        <div class="form_body">
+            <form action="https://www.google.com/search">
+                <div class="form_L1">       
+                    <div class="form_L2_C1">                                                                                <!--Column 1-->
+                        <label for="atw_input_id"> all these words:</label>
+                    </div>                
+                    <div class="form_L2_C2">                                                                                <!--Column 2-->
+                        <input class="atw_input" value autofocus="autofocus" id="atw_input_id" name="as_q" type="text">
+                    </div>                
+                </div>
+                
+                <div class="form_L1"> 
+                    <div class="form_L2_C1">                                                                                <!--Column 1-->
+                        <label for="tew_input_id"> this exact word or phrase:</label>
+                    </div>                
+                    <div class="form_L2_C2">                                                                                <!--Column 2-->
+                        <input class="atw_input" value autofocus="autofocus" id="tew_input_id" name="as_epq" type="text">
+                    </div>                
+                </div>
+
+                <div class="form_L1"> 
+                    <div class="form_L2_C1">                                                                                <!--Column 1-->
+                        <label for="aotw_input_id"> any of these words:</label>
+                    </div>                
+                    <div class="form_L2_C2">                                                                                <!--Column 2-->
+                        <input class="atw_input" value autofocus="autofocus" id="aotw_input_id" name="as_oq" type="text">
+                    </div>                
+                </div>
+
+                <div class="form_L1"> 
+                    <div class="form_L2_C1">                                                                                <!--Column 1-->
+                        <label for="notw_input_id"> none of these words:</label>
+                    </div>                
+                    <div class="form_L2_C2">                                                                                <!--Column 2-->
+                        <input class="atw_input" value autofocus="autofocus" id="notw_input_id" name="as_eq" type="text">
+                    </div>                
+                </div>
+
+                <div class="form_L1"> 
+                    <div class="form_L2_C1"></div>                                                                              <!--Column 1-->
+                    <div class="form_L2_C2_btn">                                                                                <!--Column 2-->
+                        <input class="as_btn" value="Advanced Search" type="submit">
+                    </div>                
+                </div>
+        </div>
+       
+        
+        
+    </body>
+</html>
+

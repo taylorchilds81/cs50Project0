@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="html" lang=""en">
+    <head>
+        <title>Search</title>
+        <style>
+            .html {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                min-width: 400px;
+            }
+            
+            .body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                min-width: 400px;
+                font-size: 14px;
+                font-family: Roboto,Arial,sans-serif;
+                color: #202124;
+                background: #fff;
+            }
+
+            .form_div1 {
+                display: block
+            }
+
+            .fullpage {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .g_image_l1 {
+                flex-shrink: 0;
+                box-sizing: border-box;
+                max-height: 290px;
+                height: calc(100% - 560px);
+                min-height: 92px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .g_image_l2 {
+               max-height: 92px;
+               position: relative;
+               height: 100%;
+               margin-top: auto;              
+            }
+
+            .g_image_l3 {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                object-position: center bottom;
+                width: auto;
+            }
+
+            .upper {
+                display: flex;
+                height: 60px;
+            }
+
+            .header_links {
+                display: inline-block;
+                flex-grow: 1;
+            }
+
+            .link {
+                float: right;                 
+            }
+
+            .index_link {
+                display: inline-block;
+                padding: 10px;
+                text-decoration: underline
+                ;
+            }
+
+            .input_box {
+                padding: 20px;
+                max-height: 160px;
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+
+            .input_box_l2 {
+                margin: 0 auto;
+                padding: 20px;
+                flex-shrink: 0;
+                box-sizing: border-box;
+                width: 100%;
+                max-width: 584px;
+                position: relative;
+            }
+
+            #search_bar {
+                width: 100%;
+               /* max-width: 584px;*/
+                min-height: 44px;
+                background: #fff;
+                box-sizing: border-box;
+                border: 1px solid #dfe1e5;
+                border-radius: 24px;
+                padding: 5px 8px 0px 24px;
+            }
+
+            #search_bar:hover {
+                width: 100%;
+                max-width: 584px;
+                min-height: 44px;
+                background: #fff;
+                border: 1px solid #dfe1e5;
+                border-radius: 24px;
+                box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.1);    
+            }
+            #search_bar:focus {
+                width: 100%;
+                max-width: 584px;
+                min-height: 44px;
+                background: #fff;
+                border: 1px solid #dfe1e5;
+                border-radius: 24px;
+                box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.1);
+                outline: none;    
+            }
+
+            .g_search_area {
+                height: 70px;
+                padding-top: 18px;
+                display: flex;
+                justify-content: center;
+                
+            }
+
+            #search_btn {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                background-color: #f8f9fa;
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                color: #3c4043;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .images {
+                color: #4285f4;
+                font: 16px/16px roboto-regular, arial, sans-serif;
+                position: absolute;
+                left: 215px;
+                bottom: 0;
+                white-space: nowrap;
+            }
+
+        </style>
+    </head>
+    <body class="body">
+        <div class="fullpage">
+            <div class="upper">
+                <div class="header_links">
+                    <div class="link">
+                        <div class="index_link">
+                            <a href="index.html"> Google</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="g_image_l1">
+                <div class="g_image_l2">
+                    <img class="g_image_l3" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" height="92" width="272">
+                    <span class="images">Images</span>
+                </div>
+            </div>
+            <div class="input_box">
+                <form action="https://www.google.com/images">
+                    <div class="form_div1">
+                        <div class="input_box_l2">
+                            <input type="text" id="search_bar" name="q" sclient="img">
+                            <div class="g_search_area">
+                                <input type="submit" id="search_btn" value="Google Image Search">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
